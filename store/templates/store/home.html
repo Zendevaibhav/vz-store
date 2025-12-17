@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>VZ Store Home</title>
+    <title>VZ Store - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+        a.button {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px 40px;
+            font-size: 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        a.button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to VZ Store</h1>
-
-    <!-- Navigation -->
-    <nav>
-        <a href="{% url 'product_list' %}">Products</a>
-    </nav>
-
-    <p>Click on Products to see all items.</p>
+    <h1>This is Home Page</h1>
+    <a href="{% url 'categories_list' %}" class="button">Categories</a>
+    <a href="{% url 'products_list' %}" class="button">Products</a>
 </body>
 </html>

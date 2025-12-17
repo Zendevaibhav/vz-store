@@ -1,0 +1,19 @@
+name,price,category,subcategory,description
+Wheat Atta,50,Grocery & Kitchen,Atta Rice & Dal,Fresh wheat flour
+Basmati Rice,120,Grocery & Kitchen,Atta Rice & Dal,Premium long grain rice
+Sunflower Oil,180,Grocery & Kitchen,Oil Ghee & Masala,Pure refined oil
+Ghee,250,Grocery & Kitchen,Oil Ghee & Masala,Cow ghee
+Turmeric Powder,60,Grocery & Kitchen,Oil Ghee & Masala,Pure turmeric
+Digestive Biscuits,40,Grocery & Kitchen,Bakery & Biscuits,Whole wheat biscuits
+Instant Noodles,30,Grocery & Kitchen,Ready to Eat,Quick meal noodles
+Oats,90,Grocery & Kitchen,Cereals & Pulses,Healthy breakfast oats
+Apple,50,Fruits,Fruits,Fresh red apples
+Tomato,30,Vegetables,Vegetables,Fresh vegetables
+Almonds,600,Dryfruits,Dryfruits,Premium quality almonds
+Green Tea,150,Snacks & Drinks,Tea & Coffee,Herbal green tea
+Coffee Powder,200,Snacks & Drinks,Tea & Coffee,100% pure coffee
+Face Wash,150,Beauty & Personal Care,Skincare,Gentle cleanser
+Shampoo,180,Beauty & Personal Care,Hair Care,Herbal shampoo
+Vitamin C Tablets,300,Beauty & Personal Care,Wellness,60 tablets
+Lavender Spray,120,Household Essentials,Room Freshener,Refresh your room
+Vanilla Air Fresh,100,Household Essentials,Car Freshener,Keep car fresh

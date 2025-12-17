@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Categories</title>
+</head>
+<body>
+    <h1>Categories</h1>
+    <ul>
+    {% for category in categories %}
+        <li>{{ category.name }}
+            <ul>
+            {% for sub in category.subcategories.all %}
+                <li>{{ sub.name }}</li>
+            {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <!-- Navigation buttons -->
+    <a href="{% url 'home' %}">Home</a> | 
+    <a href="{% url 'products_list' %}">Products</a>
+</body>
+</html>
+
+{% comment %} <a href="{% url 'home' %}">Home</a> | <a href="{% url 'products_list' %}">Products</a> {% endcomment %}
