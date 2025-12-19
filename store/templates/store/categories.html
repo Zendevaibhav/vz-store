@@ -1,10 +1,15 @@
+{% load static tailwind_tags %}
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Categories</title>
+    <link rel="stylesheet" href="{% static 'store/style.css' %}">
+
 </head>
 <body>
     <h1>Categories</h1>
+    
     <ul>
     {% for category in categories %}
         <li>{{ category.name }}
@@ -18,9 +23,8 @@
     </ul>
 
     <!-- Navigation buttons -->
-    <a href="{% url 'home' %}">Home</a> | 
-    <a href="{% url 'products_list' %}">Products</a>
+    <a href="{% url 'home' %}"> GO Home</a> | 
+    <a href="{% url 'products' %}">Products</a>
 </body>
 </html>
 
-{% comment %} <a href="{% url 'home' %}">Home</a> | <a href="{% url 'products_list' %}">Products</a> {% endcomment %}

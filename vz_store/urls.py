@@ -14,20 +14,23 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-# from django.contrib import admin
-# from django.urls import path, include
+
 # from django.views.generic import RedirectView
 
-# urlpatterns = [
 #     path('admin/', admin.site.urls),
-#     path('products/', include('store.urls')),
 #     path('', RedirectView.as_view(url='/admin/', permanent=True)),  # redirect / to admin
-# ]
+
 
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
+from store import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),       # Admin panel
-    path('', include('store.urls')),       # Front-end pages
-]
+    path('home/', views.home, name='home'),
+    path('', views.main_page, name='main_page'),       # Main page
+    path('store/', include('store.urls')),       # Front-end pages
+] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+

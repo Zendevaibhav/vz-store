@@ -1,16 +1,17 @@
-# from django.urls import path
-# from .views import product_list, home
-
-# urlpatterns = [
-#     path('', home, name='home'),  # Home page
-#     path('products/', product_list, name='product_list'),  # Products page
-# ]
-# 
-from django.urls import path
+from django.contrib import admin
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 from . import views
 
 urlpatterns = [
-    path('', views.home, name='home'),                 # Home page
-    path('categories/', views.categories_list, name='categories_list'),
-    path('products/', views.products_list, name='products_list'),
+    path('', views.main_page, name='main_page'),       # Main page
+    path('home/', views.home, name='home'),                 # Home page
+    # path('admin/', admin.site.urls),       # Admin panel
+    # path('', include('store.urls')),       # Front-end pages
+    path('categories/', views.categories, name='categories'),
+    path('products/', views.products, name='products'),
 ]
+
+
+
